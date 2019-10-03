@@ -18,8 +18,8 @@ namespace Prov1
 
         public void Books()
         {
-            actualValue = generator.Next(0,10);
-            rarity = generator.Next(0,10);
+            actualValue = generator.Next();
+            rarity = generator.Next();
             int intToBool = generator.Next(0,10);
             if (intToBool < 5)
             {
@@ -32,7 +32,6 @@ namespace Prov1
 
            
             List<string> names = new List<string>() {"HP", "SN", "LMD", "LOTR" };
-
             List<string> categories = new List<string>() {"Fantasy", "Novel", "History" };
 
             int namesIndex = generator.Next(names.Count);
